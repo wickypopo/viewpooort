@@ -13,6 +13,7 @@ export default function TextSwitch(props) {
     hidden: { y: 110 },
     hover: { y: 0 },
   };
+
   return (
     <motion.div
       variants={container}

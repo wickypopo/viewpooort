@@ -1,0 +1,172 @@
+        {/*
+
+        <section className="z-20 py-8 md:p-12 lg:p-48 flex justify-center items-center w-full lg:w-[95vw]  lg:rounded-4xl">
+          <div className="flex flex-col w-[90vw] lg:w-[1200px] gap-4 text-slate-950 lg:text-white">
+            <div className="flex justify-between items-center">
+              <h2 className="text-2xl text-slate-950 tracking-tight">
+                Unsere Projekte
+              </h2>
+              {isMobile ? (
+                <Button
+                  link="/projekte"
+                  variant="secondary"
+                  text="Projekte ansehen"
+                />
+              ) : (
+                <Button
+                  link="/projekte"
+                  variant="secondary"
+                  text="Projekte ansehen"
+                />
+              )}
+            </div>
+            <div>
+              <Slider />
+            </div>
+          </div>
+        </section>
+
+
+        <section className="w-[95vw] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 lg:py-36 relative">
+          <ShaderGradientCanvas
+            style={{
+              position: "absolute",
+              top: 0,
+              left: 0,
+              right: 0,
+              width: "100%",
+              height: "100%",
+              pointerEvents: "none",
+            }}
+            pixelDensity={1.5}
+            fov={50}
+          >
+            <ShaderGradient
+              animate="on"
+              axesHelper="off"
+              bgColor1="#000000"
+              bgColor2="#000000"
+              brightness={1.2}
+              cAzimuthAngle={180}
+              cDistance={1.99}
+              cPolarAngle={120}
+              cameraZoom={1}
+              color1="#0047FF"
+              color2="#7AB8FF"
+              color3="#82a4d4"
+              destination="onCanvas"
+              embedMode="off"
+              envPreset="city"
+              format="gif"
+              fov={45}
+              frameRate={10}
+              gizmoHelper="hide"
+              grain="on"
+              lightType="3d"
+              pixelDensity={1}
+              positionX={0}
+              positionY={1.8}
+              positionZ={0}
+              range="disabled"
+              rangeEnd={40}
+              rangeStart={0}
+              reflection={0.1}
+              rotationX={0}
+              rotationY={0}
+              rotationZ={-90}
+              shader="defaults"
+              type="waterPlane"
+              uAmplitude={0}
+              uDensity={1}
+              uFrequency={5.5}
+              uSpeed={0.1}
+              uStrength={3}
+              uTime={0.2}
+              wireframe={false}
+            />
+          </ShaderGradientCanvas>
+          <div className="max-w-[1200px] mx-auto">
+            {" "}
+            <div className="flex justify-between items-center">
+              <h2 className="text-2xl tracking-tight">Different by Default.</h2>
+              <Button
+                link="/projekte"
+                variant="secondary"
+                text="Projekte ansehen"
+              ></Button>
+            </div>
+            <div className="flex flex-col-reverse lg:flex-row items-end gap-12">
+              <div>
+                {" "}
+                <p className="text-2xl text-gray-500 ">
+                  <span className="text-2xl text-black mr-1">
+                    Durchschnitt überlassen wir anderen.
+                  </span>
+                  Genau deshalb gestalten wir digitale Erlebnisse, die sich
+                  nicht an Standards festklammern, sondern neue Wege gehen. Was
+                  wir entwickeln, trägt deine Handschrift. Nicht die eines
+                  Baukastens.
+                </p>
+              </div>
+              <img
+                src="https://framerusercontent.com/images/ClAOZsPbLm7Jq6KakmQIdVMCc.png?width=4000&height=3000"
+                className="lg:size-[60%] object-cover"
+              ></img>
+            </div>
+          </div>
+        </section>
+
+
+        <section className="relative border-y py-8 md:p-12 lg:p-48 flex justify-center items-center w-full lg:w-[95vw] overflow-hidden lg:bg-gray-800 lg:rounded-4xl">
+          <div className="z-20 flex flex-col w-[90vw] lg:w-[1200px] gap-4 text-slate-950 lg:text-white">
+            <div className="flex justify-between items-center">
+              <h2 className="text-2xl  tracking-tight">Unsere Leistungen</h2>
+              {isMobile ? (
+                <Button
+                  link="/leistungen"
+                  variant="secondary"
+                  text="Leistungen ansehen"
+                />
+              ) : (
+                <Button
+                  link="/leistungen"
+                  variant="secondary-white"
+                  text="Leistungen ansehen"
+                />
+              )}
+            </div>
+            <LeistungenSlider />
+          </div>
+        </section>
+
+
+        <section className="w-[95vw] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 lg:py-36">
+          <div className="max-w-[1200px] mx-auto">
+            {" "}
+            <div className="flex justify-between items-center">
+              <h2 className="text-2xl  tracking-tight">Referenzen</h2>
+              <Button
+                link="/projekte"
+                variant="secondary"
+                text="Projekte ansehen"
+              ></Button>
+            </div>
+            <div className="flex items-end">
+              <TestimonialSlider />
+            </div>
+          </div>
+        </section>
+
+
+        <section className="flex items-center w-[95vw] min-h-[40vh] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 lg:bg-gray-800 lg:rounded-4xl">
+          <div className="max-w-[1200px] mx-auto">
+            <StaggerText
+              textClass="lg:text-[120px] text-5xl font-semibold text-white tracking-tight instrument-serif-regular"
+              containerClass="flex flex-row items-start w-full flex-wrap"
+              text="inquire@viewpooort.com"
+              delay={0}
+            />
+          </div>
+        </section>
+        
+        */}

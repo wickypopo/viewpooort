@@ -7,6 +7,7 @@ import {
 } from "motion/react";
 import { useState, useRef } from "react";
 import Button from "./Button";
+import useIsMobile from "../utils/useIsMobile";
 
 const initialSlides = [
   {
@@ -48,7 +49,8 @@ const initialSlides = [
 ];
 
 export default function Slider() {
-  const slideWidth = 600;
+  const isMobile = useIsMobile();
+  const slideWidth = isMobile ? 400 : 600;
   const gap = 8;
   const slideDistance = slideWidth + gap;
   const threshold = 120;
@@ -165,7 +167,7 @@ export default function Slider() {
         {displaySlides.map((slide, index) => (
           <div
             key={`${slide.id}-${index}`}
-            className="min-w-[600px] h-full relative"
+            className="min-w-[400px] lg:min-w-[600px] h-full relative"
           >
             <img
               style={{ filter: "url(#wave)" }}
@@ -176,16 +178,17 @@ export default function Slider() {
             />
 
             <div className="pt-4 flex flex-col items-start gap-2">
-              <p className="text-slate-50 text-4xl font-regular">
+              <p className="text-slate-950  text-4xl font-regular">
                 {slide.title}
               </p>
 
-              <p className="text-slate-200 font-light">{slide.description}</p>
+              <p className="text-slate-700 font-light">{slide.description}</p>
 
-              <Button
-                text={slide["button-title"]}
-                variant="secondary-white-np"
-              />
+              {isMobile ? (
+                <Button text={slide["button-title"]} variant="secondary-np" />
+              ) : (
+                <Button text={slide["button-title"]} variant="secondary-np" />
+              )}
             </div>
           </div>
         ))}

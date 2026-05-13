@@ -1,18 +1,26 @@
 import { motion } from "motion/react";
+import { Link } from "react-router-dom";
+import useIsMobile from "../utils/useIsMobile";
 //
 export default function Button({ variant = "primary", text, ...props }) {
+  const isMobile = useIsMobile();
   const variants = {
     primary: "bg-zinc-900 text-white px-4 py-2 tracking-tight cursor-pointer",
     secondary:
-      "text-zinc-900 px-4 py-2 underline decoration-1 underline-offset-2 tracking-tight cursor-pointer",
+      "text-zinc-900 underline decoration-1 underline-offset-2 tracking-tight cursor-pointer leading-none",
     "secondary-white":
-      "text-zinc-50 px-4 py-2 underline decoration-1 underline-offset-2 tracking-tight cursor-pointer",
+      "text-zinc-50 underline decoration-1 underline-offset-2 tracking-tight cursor-pointer",
     "secondary-white-np":
       "text-zinc-50  underline decoration-1 underline-offset-2 tracking-tight cursor-pointer",
+    "secondary-np":
+      "text-zinc-900 underline decoration-1 underline-offset-2 tracking-tight cursor-pointer",
   };
   return (
-    <motion.button className={`${variants[variant]}`} {...props}>
-      {text}
+    <motion.button
+      className={`${variants[variant]} ${isMobile ? "text-sm" : null}`}
+      {...props}
+    >
+      <Link to={props.link}>{text}</Link>
     </motion.button>
   );
 }
